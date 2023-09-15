@@ -1,0 +1,9 @@
+version: '3'
+services:
+  phpldapadmin:
+    image: osixia/phpldapadmin:latest
+    environment:
+      - PHPLDAPADMIN_LDAP_HOSTS=openldap # Sesuaikan dengan nama layanan OpenLDAP Anda
+    ports:
+      - "9001:80"
+    container_name: phpldapadmin
